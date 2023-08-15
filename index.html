@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Karine</title>
+
+    <!-- ARQUIVO CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ARQUIVO JAVASCRIPT-->
+    <script src="script.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/cfa8af27ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--MENU FIXADO-->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Karine</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Navegação do toggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#inicio">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servico">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--HERO SECTION (PRIMEIRO CONTEÚDO QUE CHAMA ATENÇÃO DO CLIENTE)-->
+    <section class="bgimage" id="inicio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="glass">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 heroText">
+              <h1 class="heroTitle">Olá, me chamo Karine</h1>
+              <p class="heroDesc">Desenvolvedora em construção</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="sobre">
+      <div class="container mt-4 pt-4">
+        <h2 class="text-center">Sobre Mim</h2>
+        <div class="row mt-4">
+          <!--IMAGEM SOBRE MIM-->
+          <div class="col-lg-12 text-center">
+            <img src="images/eu.jpg" alt="Sobre Mim" class="aboutImage" />
+          </div>
+
+          <!-- INFOS SOBRE MIM-->
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <ul class="myInfos">
+                <li>Nome: Karine Fazollo</li>
+                <li>Idade: 40 anos</li>
+                <li>
+                  Ocupação atual: Professora e graduanda de análise e
+                  desenvolvimento de sistemas.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--PARÁGRAFOS + INFOS-->
+          <div class="row mt-3">
+            <p class="text-center">
+              Estou amando o desafio de tentar algo completamente novo. Venho
+              buscando uma transição de carreira e já vinha pensando e sendo
+              incentivada a adentrar ao mundo da programação, quando vi a
+              reportagem do Bom-Dia Rio Grande. Veio a calhar, pensei: "é um
+              sinal". Me inscrevi e cá estou. Amei a parte com interatividade e
+              quero conhecer outras coisas pra saber do que realmente gosto
+              neste vasto mundo de desenvolvedor web e não pretendo parar por
+              aqui, farei outros cursos no +praTi e irei cursar análise e
+              desenvolvimento de sistemas na Unisinos, rumo a esta nova
+              carreira. Veremos o que o futuro reserva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICE OU SKILLS SECTION -->
+    <section id="servico">
+      <div class="container mt-4 pt-4">
+        <h2 class="text-center">Habilidades</h2>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <p class="text-center">
+              Durante o curso, adquiri as seguintes habilidades:
+            </p>
+            <ul class="myInfos">
+              <li class="text-center">Desenvolvimento em HTML;</li>
+              <li class="text-center">Desenvolvimento em JavaScript;</li>
+              <li class="text-center">Estilização com CSS;</li>
+              <li class="text-center">React.</li>
+            </ul>
+            <p class="text-center">
+              Fora do curso, tenho aprendido noções de Pyton e em agosto/2023
+              inicio a graduação de Análise e desenvolvimento de Sistemas na
+              Unisinos. Minhas experiências anteriores proporcionaram-me skills
+              importantes, como por exemplo, liderança, gestão, muito por conta
+              do empreendedorismo do meu próprio negócio, um estúdio de pilates.
+              Hoje, estou em transição de carreira e muito empolgada com este
+              novo universo que se apresenta.
+            </p>
+          </div>
+        </div>
+        <!-- UMA LINHA-->
+      </div>
+    </section>
+    <!-- CONTATOS SECTION -->
+    <section id="contato">
+      <div class="container mt-4 mb-4 contactContent">
+        <h2 class="text-center">Contate-me</h2>
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.853736306389!2d-51.1953702246994!3d-29.999713929203185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979ee2dcb86b1%3A0xf6c4ed3a7e78b80e!2sR.%20Padre%20Diogo%20Feij%C3%B3%2C%20146%20-%20Navegantes%2C%20Porto%20Alegre%20-%20RS%2C%2090240-420!5e1!3m2!1spt-BR!2sbr!4v1691443736656!5m2!1spt-BR!2sbr"
+              width="600"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card servicesText">
+                  <div class="cardBody">
+                    <i class="fa-solid fa-mobile-screen-button contactIcon"></i>
+                    <h3>Telefone</h3>
+                    <p>(51)985725619</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card servicesText">
+                  <div class="cardBody">
+                    <i class="fa-solid fa-at contactIcon"></i>
+                    <h3>Email</h3>
+                    <p>karinefazollo@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-3">
+                <a href="https://github.com/karinefazollo" target="_blank">
+                  <i class="fa-brands fa-github-alt contactIcon"></i>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a
+                  href="https://www.linkedin.com/in/karine-fazollo-8a2498250/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin contactIcon"></i>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a
+                  href="https://www.instagram.com/karine_fazollo/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram contactIcon"></i>
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a
+                  href="https://www.threads.net/@karine_fazollo"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-threads contactIcon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+      <div class="container mt-4 pt-4">
+        <h2 class="text-center">Portfólio</h2>
+        <!-- UMA LINHA-->
+        <div class="row mt-4">
+          <!-- OUTRA COLUNA-->
+          <div class="col-lg-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="portfolio/thumbs/estanteThumb.png"
+                alt="Card Estante"
+                style="width: 100%"
+              />
+              <div class="cardBody">
+                <h3 class="cardTitle">Projeto Estante de Livros</h3>
+                <p class="cardText text-center">
+                  Primeiro projeto com HTML e CSS, desenvolvido no curso "Do
+                  Zero ao Primeiro Site". Foram trabalhadas as seguintes
+                  habilidades: divisões; imagens; listas ordenadas; tabelas.
+                </p>
+                <div class="text-center mb-3">
+                  <a href="portfolio/Estante/Estante.html" target="_blank"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="portfolio/thumbs/locadoraThumb.png"
+                alt="Card Locadora"
+                style="width: 100%"
+              />
+              <div class="cardBody">
+                <h3 class="cardTitle">Projeto Locadora 2000</h3>
+                <p class="cardText text-center">
+                  Projeto com HTML e bootstrap desenvolvido no curso "Do Zero ao
+                  Primeiro Site", ofertado pelo grupo +praTI.
+                </p>
+                <div class="text-center mb-3">
+                  <a href="portfolio/Locadora/INDEX.html" target="_blank"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="portfolio/thumbs/marioThumb.png"
+                alt="Card Mario"
+                style="width: 100%"
+              />
+              <div class="cardBody">
+                <h3 class="cardTitle">Projeto Mário Web</h3>
+                <p class="cardText text-center">
+                  Projeto com HTML, JavaScript e CSS, desenvolvido no curso "Do
+                  Zero ao Primeiro Site". Grupo +praTI. Foram trabalhadas as
+                  seguintes habilidades: interatividade; animação.
+                </p>
+                <div class="text-center mb-3">
+                  <a href="portfolio/Mario/index.html" target="_blank">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="portfolio/thumbs/cartaoThumb.png"
+                alt="Card Cartao"
+                style="width: 100%"
+              />
+              <div class="cardBody">
+                <h3 class="cardTitle">Projeto Cartão Virtual</h3>
+                <p class="cardText text-center">
+                  Projeto com HTML e bootstrap desenvolvido no curso "Do Zero ao
+                  Primeiro Site". Grupo +praTI. Foram adquiridas as seguintes
+                  habilidades: tabelas, linhas e colunas, inserções.
+                </p>
+                <div class="text-center mb-3">
+                  <a href="portfolio/Cartao/index.html" target="_blank">Link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white">
+      <div class="container p-4 pb-0">
+        <div class="row mt-4 mb-4">
+          <div class="col-lg-3">
+            <a href="https://github.com/karinefazollo" target="_blank"
+              ><i class="fa-brands fa-github-alt footerIcon"></i
+            ></a>
+          </div>
+          <div class="col-lg-3">
+            <a
+              href="https://www.linkedin.com/in/karine-fazollo-8a2498250/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin footerIcon"></i
+            ></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="https://www.instagram.com/karine_fazollo/" target="_blank"
+              ><i class="fa-brands fa-instagram footerIcon"></i
+            ></a>
+          </div>
+          <div class="col-lg-3">
+            <a href="https://www.threads.net/@karine_fazollo" target="_blank"
+              ><i class="fa-brands fa-threads footerIcon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3 footerDev">
+        <p>Desenvolvido por Karine Fazollo</p>
+      </div>
+      <a href="#inicio" class="top">Voltar ao topo</a>
+    </footer>
+  </body>
+</html>

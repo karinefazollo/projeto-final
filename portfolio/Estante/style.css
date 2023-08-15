@@ -1,0 +1,159 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*corpo da aplicação*/
+body {
+  background-color: rgb(49, 45, 6);
+
+  /*texto*/
+  text-align: justify;
+  color: #d6beadb8;
+
+  /*alinhamento e tamanho*/
+  width: 100%;
+  margin: auto;
+}
+/*sessão dos livros*/
+section {
+  /*espaçamento dentro da seção*/
+  padding: 64px 256px;
+
+  /* primeio o top, depois right, bottom e após o Left  e 
+se colocar somente duas medidas ele entente que a menor é 
+em cima-embaixo e que a outra é direita e esquerda*/
+}
+/*tabela estilização da*/
+
+table {
+  /*largura*/
+  width: 100%;
+}
+td {
+  background-color: rgba(39, 38, 38, 0.995);
+}
+td,
+th {
+  /*borda no formato shorthand*/
+  border: black solid 1px;
+  border-radius: 4px;
+  /*alinhamento do texto*/
+  text-align: center;
+}
+
+tr {
+  color: yellow;
+}
+/*título, Texto e Parágrafos*/
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: yellow;
+}
+
+/* LINKS */
+a:link {
+  /*link normal*/
+  color: #f2e7dc;
+}
+a:visited {
+  /*link visitado*/
+  color: black;
+}
+a:hover {
+  /*mouse sobre o link */
+  color: black;
+}
+a:active {
+  /*link selecionado*/
+  color: rgb(2, 255, 209);
+}
+
+/*IMAGEM*/
+img {
+  width: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 50px;
+}
+
+/*CLASSES E ID's*/
+.bookTitle {
+  background-color: #720101;
+  color: #0b9b91;
+  text-align: center;
+}
+.imgFreud {
+  width: 200px;
+}
+
+#sectionHP,
+#sectionTE,
+#sectionFR {
+  background-color: black;
+  color: yellow;
+}
+
+#header {
+  background-color: black;
+  color: yellow;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+#yourlibrary {
+  text-indent: 0px;
+  text-align: center;
+  /* CASO NÃO IMPORTE O COMANDO, ESCREVA !important; para subescrever o comando antigo.*/
+}
+#sumary {
+  background-color: #c5cf0384;
+  color: black;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*roda pé*/
+footer {
+  background-color: #0387cf;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#sectionCA,
+#sectionOR {
+  background-color: #c5cf0384;
+  color: black;
+}
+.top {
+  --offset: 50px;
+
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  background: #eeff00;
+  border-radius: 100px;
+  white-space: nowrap;
+}

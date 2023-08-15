@@ -1,0 +1,131 @@
+<DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cartão de Visita</title>
+      <style>
+        body {
+          background-color: orangered;
+        }
+        .frame {
+          position: absolute;
+          background-color: rgba(255, 167, 44, 0.974);
+          top: 50%;
+          left: 50%;
+          width: 400px;
+          height: 400px;
+          margin-top: -200px;
+          margin-left: -200px;
+          box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+          border-radius: 6px;
+        }
+        .frame,
+        .card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .flip-me {
+          position: absolute;
+          top: 20%;
+          left: 77%;
+          font-size: 10px;
+          transform: rotate(-90deg);
+        }
+        .front h1 {
+          font-size: 2.5rem;
+          margin: 1rem 3rem;
+          color: rgb(121, 181, 1);
+        }
+        p {
+          position: absolute;
+          top: 60%;
+          left: 10%;
+          color: orangered;
+        }
+        .card:hover .flip {
+          transform: rotateX(180deg) translate3d(0, 0, 0);
+        }
+
+        .flip {
+          transform-style: preserve-3d;
+          transition: all 0.7s ease-in-out;
+          perspective: 1000px;
+        }
+        .front,
+        .back {
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          width: 100%;
+          height: 180%;
+          background-color: rgb(0, 0, 0);
+        }
+        .card .back {
+          transform: rotateX(-180deg);
+          position: absolute;
+          top: 10;
+          left: 10;
+        }
+
+        .back {
+          letter-spacing: 2px;
+          text-align: center;
+        }
+
+        .back h2 {
+          font-size: 1.2rem;
+          color: rgb(248, 92, 8);
+        }
+        .back h3 {
+          font-size: 1.2rem;
+          color: rgb(248, 92, 8);
+        }
+        .network > a > img {
+          width: 32px;
+        }
+        .network > a > img:hover {
+          cursor: pointer;
+          width: 42px;
+          background-color: orangered;
+        }
+        .network {
+          display: flow-root;
+          background-color: rgb(0, 0, 0);
+        }
+      </style>
+    </head>
+    <body>
+      <div class="frame">
+        <div class="card">
+          <div class="flip">
+            <div class="front">
+              <h1>Olá!</h1>
+              <p class="flip-me">Flip</p>
+            </div>
+            <div class="back">
+              <h2>Karine Fazollo</h2>
+              <h3>Em aprendizado Dev</h3>
+              <div class="network">
+                <a href="https://github.com/karinefazollo" target="_blank"
+                  ><img src="images/github.svg" alt="Logo Github"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/karine-fazollo-8a2498250/"
+                  target="_blank"
+                  ><img src="images/linkedin.svg" alt="Logo Linkedin"
+                /></a>
+                <a
+                  href="https://instagram.com/karine_fazollo?igshid=MmU2YjMzNjRlOQ=="
+                  target="_blank"
+                  ><img src="images/instagram.svg" alt="Logo Instagram"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+</DOCTYPE>
